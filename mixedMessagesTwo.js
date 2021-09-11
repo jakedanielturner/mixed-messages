@@ -3,8 +3,8 @@
 
 const data = {
     'weatherTypes': ['Sunny', 'Rainy', 'Thunderstormy', 'Windy', 'Snowy'],
-    'daysOfWeek': [],
-    'cities': []
+    'daysOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    'cities': ['London', 'Birmingham', 'Leeds', 'Sheffield', 'Manchester', 'Newcastle', 'Belfast', 'Cardiff', 'Edinburgh', 'Glasgow']
 }
 
 const randomNumberGenerator = (num) => {
@@ -13,8 +13,9 @@ const randomNumberGenerator = (num) => {
 }
 
 const dataSelection = (obj) => {
-    const selectedWeatherType = obj.weatherTypes[randomNumberGenerator(obj.weatherTypes.length)];
-    return selectedWeatherType;
+    for (var key in obj) {
+        console.log(obj[key][randomNumberGenerator(obj[key].length)]);
+    }
 }
 
 console.log(dataSelection(data));
