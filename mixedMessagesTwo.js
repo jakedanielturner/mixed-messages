@@ -22,4 +22,10 @@ const dataSelection = (obj) => {
     return output;
 }
 
-console.log(dataSelection(data));
+const formatOutput = (data) => {
+    var randomMessage = `The weather in ${data[2]} on ${data[1]} will be ${data[0]}.`;
+
+    return randomMessage;
+}
+
+console.log(formatOutput(dataSelection(data)));
