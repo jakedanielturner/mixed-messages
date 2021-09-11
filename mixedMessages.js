@@ -1,6 +1,6 @@
 // Mixed Messages main project file
 
-const weatherTypes = []
+const weatherTypes = ['Sunny', 'Rain', 'Hail', 'Thunderstorms', 'Snow']
 
 var temperature = Math.floor(Math.random() * 40);
 
@@ -9,7 +9,7 @@ var humidity = Math.floor(Math.random() * 100);
 function output () {
     var selectedWeatherType = weatherTypes[(Math.floor(Math.random() * weatherTypes.length))];
 
-    weatherOutput = `The weather is ${selectedWeatherType}, with a temperature of ${temperature} and a humidity of ${humidity}%.`
+    weatherOutput = `The weather is ${selectedWeatherType}, with a temperature of ${temperature}C and a humidity of ${humidity}%.`
 
     return weatherOutput;
 }
