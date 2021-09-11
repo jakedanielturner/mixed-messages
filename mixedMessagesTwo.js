@@ -13,9 +13,13 @@ const randomNumberGenerator = (num) => {
 }
 
 const dataSelection = (obj) => {
+    const output = [];
+
     for (var key in obj) {
-        console.log(obj[key][randomNumberGenerator(obj[key].length)]);
+        output.push(obj[key][randomNumberGenerator(obj[key].length)]);
     }
+
+    return output;
 }
 
 console.log(dataSelection(data));
