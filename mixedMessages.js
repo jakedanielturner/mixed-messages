@@ -15,4 +15,3 @@ function output () {
 }
 
 console.log(output());
-
