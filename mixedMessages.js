@@ -1,4 +1,4 @@
-// Mixed Messages main project file
+// Mixed Messages first project file
 
 const weatherTypes = ['Sunny', 'Rain', 'Hail', 'Thunderstorms', 'Snow']
 
